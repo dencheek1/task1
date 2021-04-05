@@ -1,0 +1,14 @@
+/home/denis/Maven/task1/src/main/java/by/vsu/lab/task1/comparators/SweetNameComparator.java
+/home/denis/Maven/task1/src/main/java/by/vsu/lab/task1/comparators/SweetSugarComparator.java
+/home/denis/Maven/task1/src/main/java/by/vsu/lab/task1/sweet/Sweet.java
+/home/denis/Maven/task1/src/main/java/by/vsu/lab/task1/sweet/Candy.java
+/home/denis/Maven/task1/src/main/java/by/vsu/lab/task1/filters/SugarFilter.java
+/home/denis/Maven/task1/src/main/java/by/vsu/lab/task1/Runner.java
+/home/denis/Maven/task1/src/main/java/by/vsu/lab/task1/present/Present.java
+/home/denis/Maven/task1/src/main/java/by/vsu/lab/task1/sweet/CandyTypes/CandyTypes.java
+/home/denis/Maven/task1/src/main/java/by/vsu/lab/task1/sweet/Doughnut.java
+/home/denis/Maven/task1/src/main/java/by/vsu/lab/task1/filters/WeightFilter.java
+/home/denis/Maven/task1/src/main/java/by/vsu/lab/task1/filters/NameFilter.java
+/home/denis/Maven/task1/src/main/java/by/vsu/lab/task1/filters/Filter.java
+/home/denis/Maven/task1/src/main/java/by/vsu/lab/task1/sweet/Cookies.java
+/home/denis/Maven/task1/src/main/java/by/vsu/lab/task1/comparators/SweetWeightComparator.java
