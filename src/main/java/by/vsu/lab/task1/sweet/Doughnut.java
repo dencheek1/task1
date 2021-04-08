@@ -6,6 +6,7 @@ public class Doughnut extends Sweet {
     
     public Doughnut(float weight, float sugar, String name, String manufacturer,int holes) {
 	super(weight, sugar, name, manufacturer);
+	if(holes < 0) throw new IllegalArgumentException("Cna't be less then 0 holes");
 	this.holes = holes;
     }
 

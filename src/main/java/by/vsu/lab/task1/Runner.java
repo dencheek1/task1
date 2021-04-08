@@ -6,12 +6,16 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 
+import javax.swing.text.SimpleAttributeSet;
+
 import by.vsu.lab.task1.comparators.SweetNameComparator;
 import by.vsu.lab.task1.comparators.SweetWeightComparator;
 import by.vsu.lab.task1.filters.Filter;
 import by.vsu.lab.task1.filters.NameFilter;
 import by.vsu.lab.task1.filters.SugarFilter;
 import by.vsu.lab.task1.present.Present;
+import by.vsu.lab.task1.present.PresentBuilder;
+import by.vsu.lab.task1.present.SimplePresentBuilder;
 import by.vsu.lab.task1.sweet.Candy;
 import by.vsu.lab.task1.sweet.Cookies;
 import by.vsu.lab.task1.sweet.Doughnut;
@@ -22,23 +26,21 @@ public class Runner {
 
     public static void main(String[] args) {
 
-	Present present = new Present();
-	
-	
-	
-	try (ObjectInputStream in = new ObjectInputStream(new FileInputStream("./res/task1"))) {
-	    present = (Present) in.readObject();
-	} catch (Exception e) {
-	    System.out.println(e);
-	}
+	Present present;
 
+	PresentBuilder builder = new SimplePresentBuilder();
+	
+	present = builder.build();
+	
 	System.out.println(present);
 
-	Filter filter = new SugarFilter(10,20);
+	Filter filter = new SugarFilter(20,40);
 
 	ArrayList<Sweet> sweets = present.find(filter);
 
-	System.out.println(sweets);
+	for(Sweet sweet: sweets) {
+	    System.out.println(sweet);
+	}
     }
 
 }
