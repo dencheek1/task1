@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+a{
+	text-decoration: none;
+	background:#f1f1f1;
+	color: grey;
+	border: 1px solid black;
+	display: block;
+	padding: 4px;
+	border-radius: 3px;
+	transition-duration: .6s;
+}
+
+a:hover{
+	color:red;
+	background:#eaeaea;
+}
+
+body, html{
+	background: #fafafa;
+	width:100wv;
+	height:100wv;
+}
+
+.wraper{
+	position:relative;
+	margin:0 auto;
+	background: rgb(214,214,214);
+background: radial-gradient(circle, rgba(214,214,214,1) 0%, rgba(9,15,125,0) 100%);
+	width:650px;
+}
